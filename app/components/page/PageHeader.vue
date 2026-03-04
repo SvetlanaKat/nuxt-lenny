@@ -10,7 +10,10 @@
         />
       </a>
 
-      <nav class="page-header__nav">
+      <nav 
+      class="page-header__nav"
+      :class="{ 'page-header__nav--active': navActive }"
+      >
         <a href="#" class="page-header__nav-link">Мероприятия</a>
         <a href="#" class="page-header__nav-link">Блог</a>
         <a href="#" class="page-header__nav-link">О нас</a>
@@ -28,11 +31,26 @@
           />
         </a>
 
-        <button type="button" class="page-header__nav-toggle"></button>
+        <button 
+        type="button" 
+        class="page-header__nav-toggle"
+        :class="{ 'page-header__nav-toggle--active': navActive }"
+        @click="toggleNav"
+        ></button>
       </div>
     </div>
   </header>
 </template>
+
+<script setup>
+  const store = useStore();
+  const navActive = computed(() => store.navActive);
+
+  const toggleNav = () => {
+    store.navActive = !store.navActive;
+  };
+</script>
+
 
 <style lang="less">
   .page-header {
@@ -102,6 +120,13 @@
       display: flex;
       align-items: baseline;
       margin: 0 auto;
+
+ &--active {
+        @media @bw1020 {
+          transform: translateX(0);
+        }
+      }
+
       @media @bw1020 {
         position: absolute;
         left: 0;
@@ -223,6 +248,17 @@
     }
     &__nav-toggle {
       display: none;
+
+ &--active {
+        &::before {
+          transform: translate(0px, 6px) rotate(45deg);
+          box-shadow: none;
+        }
+        &::after {
+          transform: translate(0px, -6px) rotate(-45deg);
+        }
+      }
+
       @media @bw1020 {
         display: block;
         position: relative;
