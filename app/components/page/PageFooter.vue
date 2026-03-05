@@ -30,6 +30,7 @@
 
       <AppSocials class="page-footer__socials" />
 
+
       <div class="page-footer__devs">
         <a href="#" class="page-footer__devs-link">
           Создание и продвижение
@@ -42,7 +43,7 @@
           />
         </a>
       </div>
-    </div>
+    </div> 
   </footer>
 </template>
 

@@ -19,12 +19,10 @@ export default defineNuxtConfig({
       },
     },
 
-    
+    plugins: [svgLoader()],
   },
-
+ 
   modules: ["@pinia/nuxt"],
 
-  plugins: [svgLoader()],
-  
 });
 
