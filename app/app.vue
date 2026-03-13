@@ -2,7 +2,9 @@
   <div class="app">
     <PageHeader class="app__header" />
 
-    <main class="app__main"></main>
+    <main class="app__main">
+      <NuxtPage class="app__page" />
+    </main>
 
     <PageFooter class="app__footer" />
   </div>
@@ -94,9 +96,15 @@ bodyAttrs: {
   }
   &__main {
     flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
   }
   &__footer {
     flex: 0 0 auto;
   }
+  &__page {
+      flex: 1 0 auto;
+    }
+
 }
 </style>
