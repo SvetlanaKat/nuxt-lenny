@@ -123,13 +123,7 @@
       align-items: baseline;
       margin: 0 auto;
 
- &--active {
-        @media @bw1020 {
-          transform: translateX(0);
-        }
-      }
-
-      @media @bw1020 {
+       @media @bw1020 {
         position: absolute;
         left: 0;
         top: 0;
@@ -151,6 +145,14 @@
       @media @bw768 {
         padding: 150px 20px 30px;
       }
+      
+      &--active {
+        @media @bw1020 {
+          transform: translateX(0);
+        }
+      }
+
+     
     }
     &__nav-link {
       color: @black;
@@ -253,18 +255,8 @@
     }
     &__nav-toggle {
       display: none;
-
- &--active {
-        &::before {
-          transform: translate(0px, 6px) rotate(45deg);
-          box-shadow: none;
-        }
-        &::after {
-          transform: translate(0px, -6px) rotate(-45deg);
-        }
-      }
-
-      @media @bw1020 {
+      
+@media @bw1020 {
         display: block;
         position: relative;
         right: -11px;
@@ -298,6 +290,18 @@
       &::after {
         top: 25px;
       }
+
+      &--active {
+        &::before {
+          transform: translate(0px, 6px) rotate(45deg);
+          box-shadow: none;
+        }
+        &::after {
+          transform: translate(0px, -6px) rotate(-45deg);
+        }
+      }
+      
+      
     }
   }
 </style>
