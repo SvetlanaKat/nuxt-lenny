@@ -39,6 +39,22 @@
     mmin-width: 280px;
    }
 
+    &__more-btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      max-width: 1334px;
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      border-width: 0;
+      // @media @bw370 {
+      //   max-width: 370px;
+      // }
+    }
+
   // .container();
 
   &__list {
@@ -73,6 +89,8 @@
     //   max-width: 100%;
     // }
   }
+
+   
 
   // &__event-card {
   //   width: calc(33.3333% - 38.666px);
@@ -178,20 +196,7 @@
   //     text-decoration-color: @red;
   //   }
 
-  //   &--centre {
-  //     display: flex;
-  //     flex-direction: column;
-  //     justify-content: center;
-  //     text-align: center;
-  //     align-items: center;
-  //     max-width: 1334px;
-  //     width: 100%;
-  //     margin-right: auto;
-  //     margin-left: auto;
-  //     @media @bw370 {
-  //       max-width: 370px;
-  //     }
-  //   }
+  
   // }
   }
 </style>
