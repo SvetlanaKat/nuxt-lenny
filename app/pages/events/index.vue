@@ -12,8 +12,10 @@
     </div>
   </div>
 
+  <TableEvents/>
+  <OffersMain/>
+  <InformationEvents/>
 
-  
 </template>
 
 <script setup>

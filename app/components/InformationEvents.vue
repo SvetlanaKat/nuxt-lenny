@@ -10,11 +10,7 @@
         width="110"
         height="110"
         />
-      <!-- <svg class="information__square" width="110" height="110">
-        <g class="information__symbol" width="24" height="24">
-          <use class="information__use" width="24" height="24" xlink:href="assets/icons/information.svg"></use>
-        </g>
-      </svg> -->
+     
       <h3 class="information__title">Цены</h3>
       <p class="information__content">Цены, указанные на сайте носят информационный характер. Мы придерживаемся
         индивидуального подхода в работе с клиентом.</p>
@@ -28,11 +24,7 @@
         width="110"
         height="110"
         />
-      <!-- <svg class="information__square" width="110" height="110">
-        <g class="information__symbol" width="24" height="24">
-          <use class="information__use" width="24" height="24" xlink:href="assets/icons/contact.svg"></use>
-        </g>
-      </svg> -->
+      
       <h3 class="information__title">Контакты</h3>
       <p class="information__content">Отдел организации мероприятий </p>
       <a class="information__content" href="tel:8 (3822) 90-72-56">8 (3822) 90-72-56</a>
@@ -46,11 +38,6 @@
         width="110"
         height="110"
         />
-      <!-- <svg class="information__square" width="110" height="110">
-        <g class="information__symbol" width="24" height="24">
-          <use class="information__use" width="24" height="24" xlink:href="assets/icons/handshake.svg"></use>
-        </g>
-      </svg> -->
       <h3 class="information__title">Преимущество</h3>
       <p class="information__content">Мы имеем все возможности для того, чтобы помочь как малому бизнесу и молодым
         талантам, так и большим корпорациям и холдингам.</p>

@@ -66,6 +66,8 @@
       <div class="content event__content" v-html="data.content"></div>
     </div>
   </article>
+
+  <ReserveEvent/>
 </template>
 
 <script setup>
