@@ -45,10 +45,10 @@
         <div class="arrow__icon">
 
           <SvgIcon
-        class="about__arrow"
+        class="arrow__icon"
         name="arrow"
-        width="62"
-        height="92"
+        width="92"
+        height="62"
       />
         </div>
       </a>
@@ -530,7 +530,7 @@
     flex-direction: row;
     cursor: pointer;
     align-items: end;
-    // transform: translateY(-50px);
+    transform: translateY(-30px);
     margin-left: 40px;
     // max-width: 344px;
     width: 100%;
