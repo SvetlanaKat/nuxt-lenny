@@ -100,9 +100,9 @@ const URL = "http://localhost:3000/json/events.json";
 .swiper--3s {
   width:  100%;
   .swiper-slide {
-    box-sizing: border-box;
+    // box-sizing: border-box;
     width: calc(33.3333% + 20px);
-    min-width: 340px;
+    min-width: 400px;
     padding-right: 60px;
     @media @bw1660 {
       width: calc(33.3333% + 13.3333px);
