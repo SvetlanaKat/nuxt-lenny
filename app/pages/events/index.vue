@@ -27,6 +27,9 @@
     return $fetch(URL);
   });
   if (data?.value) list.value = data.value;
+
+
+  
   
 </script>
 
