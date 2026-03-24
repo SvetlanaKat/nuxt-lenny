@@ -1,14 +1,14 @@
 {
     "slug": "theatre",
-    "class": "listing__article-card",
-    "img": "assets/images/blog/fotosession.jpg",
-    "img_webp": "assets/images/blog/fotosession.webp",
-    "img_tablet": "assets/images/blog/fotosession_tablet.jpg",
-    "img_tablet_webp": "assets/images/blog/fotosession_tablet.webp",
+    
+    "img": "/images/blog/fotosession.jpg",
+    "img_webp": "/images/blog/fotosession.webp",
+    "img_tablet": "/images/blog/fotosession_tablet.jpg",
+    "img_tablet_webp": "/images/blog/fotosession_tablet.webp",
     "alt": "Theatre Photosession",
     "title": "Фотосессия в стенах Театра драмы",
-    "descr": "Организовывая фотосессию для локального бренда одежды мы смогли воплотить все пожелания заказчика и у нас получилась отличная работа. Смотрите как это было ",
-    "time": "26.11.2021",
+    "description": "Организовывая фотосессию для локального бренда одежды мы смогли воплотить все пожелания заказчика и у нас получилась отличная работа. Смотрите как это было ",
+    
     "date": "2021-11-26T00:00",
     "address": "Ленина 10 | 2 этаж",
   "location": "Кафе «Птичка»",

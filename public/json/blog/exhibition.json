@@ -1,14 +1,14 @@
 {
      "slug": "exhibition",
-    "class": "listing__article-card",
-    "img": "assets/images/blog/exhibition.jpg",
-    "img_tablet": "assets/images/blog/exhibition_tablet.jpg",
-    "img_webp": "assets/images/blog/exhibition.webp",
-    "img_tablet_webp": "assets/images/blog/exhibition_tablet.webp",
+    
+    "img": "/images/blog/exhibition.jpg",
+    "img_tablet": "/images/blog/exhibition_tablet.jpg",
+    "img_webp": "/images/blog/exhibition.webp",
+    "img_tablet_webp": "/images/blog/exhibition_tablet.webp",
     "alt": "Exhibition VR",
     "title": "Выставка VR в Томске",
-    "descr": "Клуб виртуальной реальности - это другие миры. яркие эмоции. новый опыт. ... Мы предоставляем нашим клиентам лучший игровой VR-опыт в Томске.",
-    "time": "05.11.2024",
+    "description": "Клуб виртуальной реальности - это другие миры. яркие эмоции. новый опыт. ... Мы предоставляем нашим клиентам лучший игровой VR-опыт в Томске.",
+    
     "date": "2024-11-5T00:00",
     "address": "Ленина 10 | 2 этаж",
   "location": "Кафе «Птичка»",

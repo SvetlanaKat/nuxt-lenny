@@ -17,7 +17,10 @@
          <NuxtLink to="/events" class="page-header__nav-link"
           >Мероприятия</NuxtLink
         >
-        <a href="#" class="page-header__nav-link">Блог</a>
+        <NuxtLink to="/blog" class="page-header__nav-link"
+          >Блог</NuxtLink
+        >
+        <!-- <a href="#" class="page-header__nav-link">Блог</a> -->
         <a href="#" class="page-header__nav-link">О нас</a>
         <a href="#" class="page-header__nav-link">Контакты</a>
       </nav>
