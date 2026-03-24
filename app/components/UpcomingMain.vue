@@ -15,7 +15,30 @@
     </div>
     
   </div>
+<footer class="swiper-footer">
+          <button type="button" class="swiper-arrow-prev arrow arrow--left">
+            <SvgIcon
+        class="more-btn__arrow arrow__icon"
+        name="arrow"
+        width="91"
+        height="60"
+      />
+  
+          </button>
 
+          <div class="swiper-pagination"></div>
+
+          <button type="button" class="swiper-arrow-next arrow">
+
+            <SvgIcon
+        class="more-btn__arrow"
+        name="arrow"
+        width="91"
+        height="60"
+      />
+
+          </button>
+        </footer>
 </section>
       
 </template>

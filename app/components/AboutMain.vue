@@ -69,7 +69,7 @@
   position: relative;
   display: block;
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 
   @media @bw768 {
     max-width: 708px;

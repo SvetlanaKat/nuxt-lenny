@@ -1,36 +1,9 @@
 <template>
   <section class="app-listing">
     <h2 class="app-listing__title section-title">{{ title }}</h2>
-
     <div class="app-listing__list">
       <slot />
     </div>
-
-<footer class="swiper-footer">
-          <button type="button" class="swiper-arrow-prev arrow arrow--left">
-            <SvgIcon
-        class="more-btn__arrow arrow__icon"
-        name="arrow"
-        width="91"
-        height="60"
-      />
-  
-          </button>
-
-          <div class="swiper-pagination"></div>
-
-          <button type="button" class="swiper-arrow-next arrow">
-
-            <SvgIcon
-        class="more-btn__arrow"
-        name="arrow"
-        width="91"
-        height="60"
-      />
-
-          </button>
-        </footer>
-
   </section>
 </template>
 
@@ -44,39 +17,7 @@
 </script>
 
 <style lang="less">
-.arrow {
-  flex-shrink: 0;
-  position: relative;
-  display: inline-block;
-  width: 92px;
-  height: 60px;
-  padding: 0;
-  border: none;
-  background: none;
-  color: @black;
-  font-size: 0;
-  text-decoration: none;
-  transition: color 0.2s;
-  cursor: pointer;
-  @media @bw1340 {
-    width: 67px;
-    height: 40px;
-  }
-  &:active {
-    color: @red;
-  }
-  &:hover {
-    @media (hover: hover) {
-      color: @red;
-    }
-  }
-  
-  &--left {
-    .arrow__icon {
-      transform: rotate(180deg);
-    }
-  }
-}
+
 
   .app-listing {
   box-sizing: border-box;

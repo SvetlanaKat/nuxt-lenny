@@ -10,6 +10,17 @@
       />
     </AppListing>
     </div>
+
+    <button type="button" class="more-btn events__more-btn">
+      Показать всё
+
+      <SvgIcon
+        class="more-btn__arrow"
+        name="arrow_down"
+        width="62"
+        height="92"
+      />
+    </button>
   </div>
 
   <TableEvents/>
@@ -27,10 +38,6 @@
     return $fetch(URL);
   });
   if (data?.value) list.value = data.value;
-
-
-  
-  
 </script>
 
 <style lang="less">
@@ -44,6 +51,27 @@
   @media @bw768 {
     padding: 50px 0 35px;
   }
+
+  &__more-btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      max-width: 1334px;
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      border-width: 0;
+      // @media @bw370 {
+      //   max-width: 370px;
+      // }
+       &:hover {
+    color: @red;
+      text-decoration-color: @red;
+      background: none;
+  }
+    }
 
   &__container {
   .container();
@@ -72,5 +100,38 @@
 }
 }
 
+.arrow {
+  flex-shrink: 0;
+  position: relative;
+  display: inline-block;
+  width: 92px;
+  height: 60px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: @black;
+  font-size: 0;
+  text-decoration: none;
+  transition: color 0.2s;
+  cursor: pointer;
+  @media @bw1340 {
+    width: 67px;
+    height: 40px;
+  }
+  &:active {
+    color: @red;
+  }
+  &:hover {
+    @media (hover: hover) {
+      color: @red;
+    }
+  }
+  
+  &--left {
+    .arrow__icon {
+      transform: rotate(180deg);
+    }
+  }
+}
 
 </style>
