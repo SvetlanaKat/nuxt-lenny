@@ -17,7 +17,7 @@
       
       <h4 class="article-card__title-link">{{ data.title }}</h4>
 
-       <div class="article-card__arrow arrow">
+       <div class="article-card__arrow ">
         
         <SvgIcon
         class="arrow__icon1"
@@ -29,6 +29,7 @@
       </div>
 
       <p class="article-card__description">{{ data.description }}</p>
+      
      </div>
       
     </NuxtLink>
@@ -307,6 +308,15 @@
     color: inherit;
     transition: none;
 
+    &:active {
+    color: @red;
+  }
+  &:hover {
+    @media (hover: hover) {
+      color: @red;
+    }
+  }
+
     @media @bw1340 {
       right: 20px;
     }
@@ -327,5 +337,30 @@
 //     }
 
   }
+}
+
+.arrow {
+  flex-shrink: 0;
+  position: relative;
+  display: inline-block;
+  width: 92px;
+  height: 60px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: @black;
+  font-size: 0;
+  text-decoration: none;
+  transition: color 0.2s;
+  cursor: pointer;
+  @media @bw1340 {
+    width: 67px;
+    height: 40px;
+  }
+  &__icon1 {
+    display: flex;
+    
+  }
+  
 }
 </style>

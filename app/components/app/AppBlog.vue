@@ -172,6 +172,7 @@
     &:hover {
       color: @red;
       text-decoration-color: @red;
+       background: none;
     }
 
     &--centre {
