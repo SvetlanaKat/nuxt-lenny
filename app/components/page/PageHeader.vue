@@ -20,9 +20,15 @@
         <NuxtLink to="/blog" class="page-header__nav-link"
           >Блог</NuxtLink
         >
+       <NuxtLink to="/about" class="page-header__nav-link"
+          >О нас</NuxtLink
+        >
+         <NuxtLink to="/contacts" class="page-header__nav-link"
+          >Контакты</NuxtLink
+        > 
         <!-- <a href="#" class="page-header__nav-link">Блог</a> -->
-        <a href="#" class="page-header__nav-link">О нас</a>
-        <a href="#" class="page-header__nav-link">Контакты</a>
+        <!-- <a href="#" class="page-header__nav-link">О нас</a> -->
+        <!-- <a href="#" class="page-header__nav-link">Контакты</a> -->
       </nav>
 
       <div class="page-header__right-block">
