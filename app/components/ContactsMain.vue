@@ -45,7 +45,9 @@
       </div>
 
     </div>
-    <div class="contacts__square-map" id="js-contactsMap" width="750" height="491"></div>
+    <div class="contacts__square-map"  width="750" height="491">
+<TheMap/>
+    </div>
   </div>
 
   <p class="contacts__text">Просто делайте, что нравится, <br>а мы вам поможем</p>
