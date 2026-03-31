@@ -1,7 +1,7 @@
 <template>
   <div>
     <SloganMain/>
-    <OffersMain/>
+    <AppOffers/>
     <AboutMain/>
     <UpcomingMain/>
     <BlogMain/>

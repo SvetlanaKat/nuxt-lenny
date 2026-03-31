@@ -21,7 +21,8 @@ const store = useStore();
 
 bodyAttrs: {
       class: {
-        "overflow-nav": () => store.navActive
+        "overflow-nav": () => store.navActive,
+        overflow: () => store.getModal,
       }
     },
 
@@ -76,6 +77,8 @@ bodyAttrs: {
         sizes: "16x16",
       },
     ],
+
+
   });
 </script>
 

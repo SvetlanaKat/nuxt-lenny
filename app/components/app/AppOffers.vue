@@ -2,13 +2,31 @@
   <section class="offers">
   <h4 class="offers__title">Я ХОЧУ:</h4>
   <div class="offers__btns">
-    <button class="btn offers__btn  btn--red" type="button" id="js-eventOpenBtn">Провести мероприятие</button>
+    <button 
+    class="btn offers__btn  btn--red" 
+    type="button"
+    @click="openPopup()"
+    >
+      Провести мероприятие
+    </button>
+    
     <button class="btn offers__btn  btn--white" type="button">Стать арендатором</button>
   </div>
+
+  <ModalWindow
+       :name="'getOffer'"
+      :title="' Заполните форму<br />и мы подберем площадку'"
+    ></ModalWindow>
+    
 </section>
 </template>
 
-<script setup></script>
+<script setup>
+ const store = useStore();
+  const openPopup = () => {
+    store.openModal("getOffer");
+  };
+</script>
 
 <style lang="less">
 .offers {
