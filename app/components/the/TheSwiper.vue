@@ -7,7 +7,7 @@
       :freeMode="freeMode"
       :speed="speed"
       :grab-cursor="true"
-      :modules="[Navigation, Pagination]"
+       :modules="[Navigation, Pagination]"
       :pagination="{ clickable: true, el: '.swiper-pagination-bullets' }"
       :navigation="{
         prevEl: '.swiper-arrow-prev',
@@ -20,11 +20,10 @@
         :key="index"
         class="the-swiper__slide"
       >
-      <component :is="component" :data="card" class="the-swiper__card" />
-        Слайд {{ index + 1 }}
+        <component :is="component" :data="card" class="the-swiper__card" />
       </swiper-slide>
-
-      <template #container-end>
+   
+   <template #container-end>
         <div class="swiper-footer">
           <button type="button" class="swiper-arrow-prev arrow arrow--left">
             <SvgIcon class="arrow__icon" name="arrow" width="92" height="62" />
@@ -37,23 +36,29 @@
           </button>
         </div>
       </template>
+
     </swiper>
   </div>
 </template>
+
+
 <script setup>
   import { Swiper, SwiperSlide } from "swiper/vue";
-  import { Navigation, Pagination } from "swiper/modules";
-
+import { Navigation, Pagination } from "swiper/modules";
   import "swiper/css";
   import "swiper/css/pagination";
 
-  
-
   const props = defineProps({
-  component: {
+
+    component: {
     type: [Object, String],
     required: true,
   },
+
+    list: {
+      type: Array,
+      default: () => [],
+    },
     slidesPerView: {
       type: [String, Number],
       default: "auto",

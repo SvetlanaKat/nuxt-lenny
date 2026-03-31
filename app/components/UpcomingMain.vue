@@ -2,7 +2,13 @@
 <section class="upcoming">
   <div class="upcoming__wrapper">
     <div class="upcoming__container">
-      <AppListing title="Мероприятия" class="upcoming__swiper swiper swiper--3s">
+      <h2 class="upcoming__title section-title">Мероприятия</h2>
+       <TheSwiper
+          :component="EventCard"
+          :list="list"
+          class="events-upcoming__swiper"
+        />
+      <!-- <AppListing title="Мероприятия" class="upcoming__swiper swiper swiper--3s">
       <div class="swiper-wrapper">
         <EventCard
         v-for="(card, index) in list"
@@ -11,11 +17,13 @@
         class="swiper-slide"
       />
       </div>
-      </AppListing>
+      </AppListing> -->
+      <a href="#" class="listing__link link">Смотреть все</a>
     </div>
     
   </div>
-<footer class="swiper-footer">
+
+  <!-- <footer class="swiper-footer">
           <button type="button" class="swiper-arrow-prev arrow arrow--left">
             <SvgIcon
         class="more-btn__arrow arrow__icon"
@@ -38,17 +46,17 @@
       />
 
           </button>
-        </footer>
+        </footer> -->
 </section>
-      
 </template>
 
 <script setup>
+import { EventCard } from "#components";
 const list = ref([]);
 
 const URL = "http://localhost:3000/json/events.json";
 
-  const { data } = await useAsyncData(`events`, () => {
+  const { data } = await useAsyncData(`upcoming`, () => {
     return $fetch(URL);
   });
   if (data?.value) list.value = data.value;
@@ -199,10 +207,45 @@ const URL = "http://localhost:3000/json/events.json";
   //   }
 }
 
+.listing {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 
+   @media @bw650 {
+    width: 100%;
+    mmin-width: 280px;
+   }
 
+  .container();
+  &__link {
+    display: inline-flex;
+    align-self: flex-end;
+    // width: 100%;
+    float: right;
+    // margin-top: 15px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: @black;
+    line-height: 22px;
+    font-family: @font1;
+    text-decoration: none;
+    transition: color 0.2s;
+    @media @bw768 {
+      font-size: 14px;
+    }
+    //  @media @bw370 {
+    //   font-size: 14px;
+    //   width: 100px;
+    //   margin-top: 35px;
+    // }
 
-
- 
+    &:hover {
+      color: @red;
+      text-decoration-color: @red;
+    }
+  }
+  }
 
 </style>
