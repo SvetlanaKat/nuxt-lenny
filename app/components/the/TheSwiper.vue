@@ -26,13 +26,13 @@
    <template #container-end>
         <div class="swiper-footer">
           <button type="button" class="swiper-arrow-prev arrow arrow--left">
-            <SvgIcon class="arrow__icon" name="arrow" width="92" height="62" />
+            <SvgIcon class="arrow__icon" name="arrow" width="91" height="60" />
           </button>
 
           <div class="swiper-pagination-bullets"></div>
 
           <button type="button" class="swiper-arrow-next arrow">
-            <SvgIcon class="arrow__icon" name="arrow" width="92" height="62" />
+            <SvgIcon class="arrow__icon" name="arrow" width="91" height="60" />
           </button>
         </div>
       </template>

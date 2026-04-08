@@ -95,12 +95,12 @@
       margin-bottom: 80px;
     }
 
-    // @media @bw370 {
-    //   max-width: 280px;
-    //   width: 100%;
-    //   margin-right: 20px;
-    //   margin-bottom: 60px;
-    // }
+    @media @bw370 {
+      max-width: 280px;
+      width: 100%;
+      margin-right: 20px;
+      margin-bottom: 60px;
+    }
   }
 
   &__block2 {
@@ -144,11 +144,11 @@
         "pic2";
     }
 
-    // @media @bw370 {
-    //   gap: 60px 2px;
-    //   grid-template-columns: auto;
-    //   grid-template-rows: auto 10px auto;
-    // }
+    @media @bw370 {
+      gap: 60px 2px;
+      grid-template-columns: auto;
+      grid-template-rows: auto 10px auto;
+    }
   }
 
   &__block3 {
@@ -198,19 +198,19 @@
         "arrow";
     }
 
-    // @media @bw370 {
-    //   grid-template-columns: auto;
-    //   max-width: 280px;
-    //   margin-top: 50px;
-    // }
+    @media @bw370 {
+      grid-template-columns: auto;
+      max-width: 280px;
+      margin-top: 50px;
+    }
   }
 
   &__picture1 {
     grid-area: pic1;
 
-    // @media @bw370 {
-    //   max-width: 370px;
-    // }
+    @media @bw370 {
+      max-width: 370px;
+    }
   }
 
   &__title {
@@ -228,10 +228,10 @@
       font-size: 26px;
     }
 
-    // @media @bw370 {
-    //   font-size: 18px;
-    //   width: 280px;
-    // }
+    @media @bw370 {
+      font-size: 18px;
+      width: 280px;
+    }
   }
 
   &__picture2 {
@@ -304,12 +304,12 @@
         margin-right: 30px;
       }
 
-      // @media @bw370 {
-      //   max-width: 280px;
-      //   max-height: 74px;
-      //   width: 100%;
-      //   margin-right: 20px;
-      // }
+      @media @bw370 {
+        max-width: 280px;
+        max-height: 74px;
+        width: 100%;
+        margin-right: 20px;
+      }
     }
   }
 
@@ -344,12 +344,12 @@
         max-width: 100%;
       }
 
-      // @media @bw370 {
-      //   margin-left: 25px;
-      //   margin-right: 25px;
-      //   max-width: 280px;
-      //   width: 100%;
-      // }
+      @media @bw370 {
+        margin-left: 25px;
+        margin-right: 25px;
+        max-width: 280px;
+        width: 100%;
+      }
     }
 
     &--2 {
@@ -376,9 +376,9 @@
         margin: 0;
       }
 
-      // @media @bw370 {
-      //   max-width: 193px;
-      // }
+      @media @bw370 {
+        max-width: 193px;
+      }
     }
 
     &--3 {
@@ -400,13 +400,13 @@
         transform: translateX(30px);
       }
 
-      // @media @bw370 {
-      //   max-width: 267px;
-      //   width: 100%;
-      //   transform: translateX(20px);
-      //   margin-right: 20px;
-      //   top: 5px;
-      // }
+      @media @bw370 {
+        max-width: 267px;
+        width: 100%;
+        transform: translateX(20px);
+        margin-right: 20px;
+        top: 5px;
+      }
     }
   }
 
@@ -451,10 +451,10 @@
       max-width: 600px;
     }
 
-    // @media @bw370 {
-    //   max-width: 280px;
-    //   margin-left: 0;
-    // }
+    @media @bw370 {
+      max-width: 280px;
+      margin-left: 0;
+    }
   }
 
   &__text1 {
@@ -486,10 +486,10 @@
       margin-left: 50px;
     }
 
-    // @media @bw370 {
-    //   max-width: 280px;
-    //   margin-left: 0;
-    // }
+    @media @bw370 {
+      max-width: 280px;
+      margin-left: 0;
+    }
   }
 
   &__text2 {
@@ -580,9 +580,9 @@
       width: 262px;
     }
 
-    // @media @bw370 {
-    //   width: 280px;
-    // }
+    @media @bw370 {
+      width: 280px;
+    }
 
     &:hover {
       color: @red_dark;

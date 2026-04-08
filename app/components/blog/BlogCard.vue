@@ -330,11 +330,11 @@
       left: 370px;
       top: 120px;
     }
-// @media @bw370 {
-//       position: relative;
-//       left: 175px;
-//       top: 150px;
-//     }
+@media @bw370 {
+      position: relative;
+      left: 175px;
+      top: 150px;
+    }
 
   }
 }

@@ -72,12 +72,12 @@
       margin: 0 -10px -80px;
     }
 
-    // @media @bw370 {
-    //   gap: 60px 0;
-    //   margin: 0 auto 0 auto;
-    //   width: 280px;
-    //   max-width: 100%;
-    // }
+    @media @bw370 {
+      gap: 60px 0;
+      margin: 0 auto 0 auto;
+      width: 280px;
+      max-width: 100%;
+    }
   }
 
    

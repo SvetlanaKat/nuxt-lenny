@@ -8,45 +8,9 @@
           :list="list"
           class="events-upcoming__swiper"
         />
-      <!-- <AppListing title="Мероприятия" class="upcoming__swiper swiper swiper--3s">
-      <div class="swiper-wrapper">
-        <EventCard
-        v-for="(card, index) in list"
-        :key="index"
-        :data="card"
-        class="swiper-slide"
-      />
-      </div>
-      </AppListing> -->
       <a href="#" class="listing__link link">Смотреть все</a>
     </div>
-    
   </div>
-
-  <!-- <footer class="swiper-footer">
-          <button type="button" class="swiper-arrow-prev arrow arrow--left">
-            <SvgIcon
-        class="more-btn__arrow arrow__icon"
-        name="arrow"
-        width="91"
-        height="60"
-      />
-  
-          </button>
-
-          <div class="swiper-pagination"></div>
-
-          <button type="button" class="swiper-arrow-next arrow">
-
-            <SvgIcon
-        class="more-btn__arrow"
-        name="arrow"
-        width="91"
-        height="60"
-      />
-
-          </button>
-        </footer> -->
 </section>
 </template>
 
@@ -74,16 +38,16 @@ const URL = "http://localhost:3000/json/events.json";
     padding: 80px 0 43px;
   }
 
-  // @media @bw370 {
-  //   padding: 60px 0 100px;
-  // }
+  @media @bw370 {
+    padding: 60px 0 100px;
+  }
 
 &__container {
-    //  @media @bw370 {
-    //   max-width: 340px;
-    //   padding: 0;
-    //   margin: 0;
-    //  }
+     @media @bw370 {
+      max-width: 340px;
+      padding: 0;
+      margin: 0;
+     }
     .container();
   }
 
@@ -150,11 +114,11 @@ const URL = "http://localhost:3000/json/events.json";
       min-width: 300px;
       padding-right: 20px;
     }
-// @media @bw370 {
-//       // width: calc(33.3333% + 2.6666px);
-//       min-width: 280px;
-//     //   padding-right: 20px;
-//     }
+@media @bw370 {
+      // width: calc(33.3333% + 2.6666px);
+      min-width: 280px;
+    //   padding-right: 20px;
+    }
      
     &:last-child {
       width: calc(33.3333% + 4px);
@@ -201,10 +165,10 @@ const URL = "http://localhost:3000/json/events.json";
   @media @bw768 {
     margin: 60px auto 0;
   }
-  // @media @bw370 {
-  //   width: 280px;
-  //     margin: 40px 20px 0;
-  //   }
+  @media @bw370 {
+    width: 280px;
+      margin: 40px 20px 0;
+    }
 }
 
 .listing {
@@ -235,11 +199,11 @@ const URL = "http://localhost:3000/json/events.json";
     @media @bw768 {
       font-size: 14px;
     }
-    //  @media @bw370 {
-    //   font-size: 14px;
-    //   width: 100px;
-    //   margin-top: 35px;
-    // }
+     @media @bw370 {
+      font-size: 14px;
+      width: 100px;
+      margin-top: 35px;
+    }
 
     &:hover {
       color: @red;

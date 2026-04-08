@@ -40,13 +40,13 @@
     margin-bottom: 130px;
   }
 
-  // @media @bw370 {
-  //   max-width: 370px;
-  //   margin-bottom: 100px;
-  //   width: 100%;
-  //   margin-left: 20px;
-  //   margin-right: 20px;
-  // }
+  @media @bw370 {
+    max-width: 370px;
+    margin-bottom: 100px;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
   &__container {
     .container();
@@ -83,10 +83,10 @@
       font-size: 14px;
     }
 
-    // @media @bw370 {
-    //   margin: 0;
-    //   max-width: 320px;
-    // }
+    @media @bw370 {
+      margin: 0;
+      max-width: 320px;
+    }
   }
 
   &__btn {

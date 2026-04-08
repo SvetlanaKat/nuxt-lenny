@@ -77,9 +77,9 @@
     @media @bw1660 {
       margin-bottom: 0 0 20px;
     }
-    // @media @bw370 {
-    //   max-width: 280px;
-    // }
+    @media @bw370 {
+      max-width: 280px;
+    }
 
     &::after {
       content: "";

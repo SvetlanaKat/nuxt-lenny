@@ -116,9 +116,9 @@ const { data } = await useFetch(URL);
       max-width: 600px;
     }
 
-    // @media @bw370 {
-    //   max-width: 282px;
-    // }
+    @media @bw370 {
+      max-width: 282px;
+    }
   }
 
   &__title {
@@ -150,9 +150,9 @@ const { data } = await useFetch(URL);
       font-size: 20px;
      }
 
-    // @media @bw370 {
-    //   margin-bottom: 40px;
-    // }
+    @media @bw370 {
+      margin-bottom: 40px;
+    }
   }
 
   &__about {
@@ -181,10 +181,10 @@ const { data } = await useFetch(URL);
         margin-left: 20%;
     }
 
-    // @media @bw370 {
-    //   margin-bottom: 60px;
-    //   margin-left: 38px;
-    // }
+    @media @bw370 {
+      margin-bottom: 60px;
+      margin-left: 38px;
+    }
   }
 &__info{
   display: flex;
@@ -413,9 +413,9 @@ const { data } = await useFetch(URL);
     font-size: 18px;
     font-weight: 700;
 
-    // @media @bw370 {
-    //   font-size: 16px;
-    // }
+    @media @bw370 {
+      font-size: 16px;
+    }
   }
 
   &__ul {
@@ -431,10 +431,10 @@ const { data } = await useFetch(URL);
       margin-bottom: 55px;
     }
 
-    // @media @bw370 {
-    //   font-size: 14px;
-    //   line-height: 28px;
-    // }
+    @media @bw370 {
+      font-size: 14px;
+      line-height: 28px;
+    }
   }
 
   &__ol {
@@ -450,10 +450,10 @@ const { data } = await useFetch(URL);
       margin-top: 40px;
     }
 
-    // @media @bw370 {
-    //   font-size: 14px;
-    //   line-height: 19px;
-    // }
+    @media @bw370 {
+      font-size: 14px;
+      line-height: 19px;
+    }
   }
 
   &__li {
@@ -469,10 +469,10 @@ const { data } = await useFetch(URL);
     font-weight: 400;
     line-height: 22px;
 
-    // @media @bw370 {
-    //   font-size: 14px;
-    //   line-height: 19px;
-    // }
+    @media @bw370 {
+      font-size: 14px;
+      line-height: 19px;
+    }
   }
 
   &__pic1 {

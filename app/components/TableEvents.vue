@@ -130,11 +130,11 @@
     width: calc(100% + 40px);
   }
 
-  // @media @bw370 {
-  //   display: block;
-  //   margin: 0 -20px;
-  //   width: calc(100% - 280px);
-  // }
+  @media @bw370 {
+    display: block;
+    margin: 0 -20px;
+    width: calc(100% - 280px);
+  }
 
   &__paragraph {
     position: relative;

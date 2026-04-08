@@ -41,9 +41,9 @@
       margin-right: auto;
       margin-left: auto;
       border-width: 0;
-      // @media @bw370 {
-      //   max-width: 370px;
-      // }
+      @media @bw370 {
+        max-width: 370px;
+      }
     }
 
   // .container();

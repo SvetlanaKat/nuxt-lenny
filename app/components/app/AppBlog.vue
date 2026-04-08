@@ -59,12 +59,12 @@
       margin: 0 -10px -80px;
     }
 
-    // @media @bw370 {
-    //   gap: 60px 0;
-    //   margin: 0 auto 0 auto;
-    //   width: 280px;
-    //   max-width: 100%;
-    // }
+    @media @bw370 {
+      gap: 60px 0;
+      margin: 0 auto 0 auto;
+      width: 280px;
+      max-width: 100%;
+    }
   }
 
   &__event-card {
@@ -163,11 +163,11 @@
     @media @bw768 {
       font-size: 14px;
     }
-    //  @media @bw370 {
-    //   font-size: 14px;
-    //   width: 100px;
-    //   margin-top: 35px;
-    // }
+     @media @bw370 {
+      font-size: 14px;
+      width: 100px;
+      margin-top: 35px;
+    }
 
     &:hover {
       color: @red;
@@ -185,9 +185,9 @@
       width: 100%;
       margin-right: auto;
       margin-left: auto;
-      // @media @bw370 {
-      //   max-width: 370px;
-      // }
+      @media @bw370 {
+        max-width: 370px;
+      }
     }
   }
 }

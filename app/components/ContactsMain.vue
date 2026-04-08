@@ -238,13 +238,13 @@
       height: 327px;
     }
 
-    // @media @bw370 {
-    //   max-width: 280px;
-    //   width: 100%;
-    //   height: 186px;
-    //   margin-right: auto;
-    //   margin-left: auto;
-    // }
+    @media @bw370 {
+      max-width: 280px;
+      width: 100%;
+      height: 186px;
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 
   &__symbol {
@@ -276,10 +276,10 @@
       font-size: 18px;
       font-weight: 700;
     }
-    // @media @bw370 {
-    //   font-size: 14px;
-    //   font-weight: 600;
-    // }
+    @media @bw370 {
+      font-size: 14px;
+      font-weight: 600;
+    }
   }
 
   &__content {
@@ -298,9 +298,9 @@
       padding-left: 0;
       margin-top: 0;
     }
-    // @media @bw370 {
-    //   font-size: 14px;
-    // }
+    @media @bw370 {
+      font-size: 14px;
+    }
   }
 
   &__text {
@@ -329,13 +329,13 @@
       font-weight: 700;
     }
 
-    // @media @bw370 {
-    //   font-size: 40px;
-    //   font-weight: 700;
-    //   width: 446px;
-    //   height: 162px;
-    //   margin-bottom: 0;
-    // }
+    @media @bw370 {
+      font-size: 40px;
+      font-weight: 700;
+      width: 446px;
+      height: 162px;
+      margin-bottom: 0;
+    }
   }
 
   &__blok {

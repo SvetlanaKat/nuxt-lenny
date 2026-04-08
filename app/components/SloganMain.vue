@@ -58,12 +58,12 @@
       height: auto;
     }
 
-    // @media @bw370 {
-    //   overflow: hidden;
-    //   width: 437px;
-    //   transform: translateX(-30px);
-    //   height: auto;
-    // }
+    @media @bw370 {
+      overflow: hidden;
+      width: 437px;
+      transform: translateX(-30px);
+      height: auto;
+    }
   }
 
   &__heading {
@@ -86,10 +86,10 @@
       margin-bottom: 50px;
     }
 
-    // @media @bw370 {
-    //   font-size: 13px;
-    //   margin-bottom: 29px;
-    // }
+    @media @bw370 {
+      font-size: 13px;
+      margin-bottom: 29px;
+    }
   }
 
   &__paragraph {
@@ -117,11 +117,11 @@
       font-size: 25px;
     }
 
-    // @media @bw370 {
-    //   font-size: 13px;
-    //   margin-top: 28px;
-    //   margin-bottom: 40px;
-    // }
+    @media @bw370 {
+      font-size: 13px;
+      margin-top: 28px;
+      margin-bottom: 40px;
+    }
   }
 }
 </style>
