@@ -172,4 +172,57 @@ import { Navigation, Pagination } from "swiper/modules";
       }
     }
   }
+
+  .arrow {
+  flex-shrink: 0;
+  position: relative;
+  display: inline-block;
+  width: 92px;
+  height: 60px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: @black;
+  font-size: 0;
+  text-decoration: none;
+  transition: color 0.2s;
+  cursor: pointer;
+  @media @bw1340 {
+    width: 67px;
+    height: 40px;
+  }
+  &:active {
+    color: @red;
+  }
+  &:hover {
+    @media (hover: hover) {
+      color: @red;
+    }
+  }
+  
+  &--left {
+    .arrow__icon {
+      transform: rotate(180deg);
+    }
+  }
+  &--disabled {
+    color: rgba(191, 191, 191, 1) !important;
+    pointer-events: none;
+  }
+
+  &--90g {
+    transform: rotate(90deg);
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+  &__icon {
+    @media @bw768 {
+      width: 67px;
+  height: 40px;
+    }
+  }
+ 
+
+}
 </style>

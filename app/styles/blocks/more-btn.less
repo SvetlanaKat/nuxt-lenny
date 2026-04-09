@@ -21,6 +21,41 @@
       text-decoration-color: @red;
   }
 
+  &__arrow {
+  flex-shrink: 0;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 92px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: @black;
+  font-size: 0;
+  text-decoration: none;
+  transition: color 0.2s;
+  cursor: pointer;
+ 
+  // @media @bw1340 {
+  //   width: 67px;
+  //   height: 40px;
+  // }
+  &:active {
+    color: @red;
+  }
+  &:hover {
+    @media (hover: hover) {
+      color: @red;
+    }
+  }
+  
+  &--left {
+    .arrow__icon {
+      transform: rotate(180deg);
+    }
+  }
+}
+
   
 
   // &--red {

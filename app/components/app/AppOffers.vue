@@ -30,7 +30,7 @@
 
 <style lang="less">
 .offers {
-  margin-bottom: 200px;
+  // margin-bottom: 200px;
 
   @media @bw768 {
     max-width: 768px;
@@ -85,7 +85,8 @@
 
     @media @bw370 {
       margin: 0;
-      max-width: 320px;
+      max-width: 280px;
+      padding: 0;
     }
   }
 
@@ -109,8 +110,14 @@
       font-size: 14px;
       justify-content: center;
       margin-bottom: 25px;
-      margin-right: 0;
-      margin-left: 0;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @media @bw600 {
+      max-width: 280px;
+      padding: 0;
+      
     }
   }
 }
@@ -146,7 +153,7 @@
     @media @bw650 {
       order: 1;
       font-size: 14px;
-      padding: 15px 70px;
+      // padding: 15px 70px;
     }
 
     &:hover {
@@ -165,7 +172,7 @@
     @media @bw650 {
       order: -1;
       font-size: 14px;
-      padding: 15px 70px;
+      // padding: 15px 70px;
     }
   }
 }

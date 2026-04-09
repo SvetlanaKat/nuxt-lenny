@@ -137,7 +137,7 @@ const { data } = await useFetch(URL);
     }
 
     @media @bw768 {
-      max-width: 468px;
+      // max-width: 468px;
       font-size: 40px;
       margin-bottom: 64px;
     }
@@ -206,6 +206,7 @@ const { data } = await useFetch(URL);
       margin: 0;
       grid-area: time;
       order: 3;
+      max-height: 56px;
     }
 
     &--right {
@@ -283,13 +284,12 @@ const { data } = await useFetch(URL);
 
     @media @bw768 {
       font-size: 18px;
-      // margin-right: 41px;
     }
 
     @media @bw650 {
-      margin: 0;
+      
       grid-area: time;
-      order: 3;
+      // order: 3;
     }
 
     &--right {
@@ -309,7 +309,7 @@ const { data } = await useFetch(URL);
 
       @media @bw650 {
         grid-area: right;
-        order: 2;
+        // order: 2;
       }
     }
   }

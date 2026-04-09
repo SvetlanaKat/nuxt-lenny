@@ -159,11 +159,12 @@ const URL = "http://localhost:3000/json/events.json";
   width: 530px;
   max-width: 100%;
   margin: 70px auto 0;
-  @media @bw1340 {
-    width: 300px;
-  }
+  // @media @bw1340 {
+  //   width: 300px;
+  // }
   @media @bw768 {
     margin: 60px auto 0;
+    max-width: 300px;
   }
   @media @bw370 {
     width: 280px;
@@ -175,6 +176,7 @@ const URL = "http://localhost:3000/json/events.json";
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  
 
    @media @bw650 {
     width: 100%;
@@ -195,6 +197,7 @@ const URL = "http://localhost:3000/json/events.json";
     line-height: 22px;
     font-family: @font1;
     text-decoration: none;
+
     transition: color 0.2s;
     @media @bw768 {
       font-size: 14px;

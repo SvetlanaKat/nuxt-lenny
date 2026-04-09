@@ -69,6 +69,7 @@
   position: relative;
   display: block;
   width: 100%;
+  margin-top: 200px;
   margin-bottom: 150px;
 
   @media @bw768 {
@@ -294,7 +295,7 @@
         max-width: 867px;
         max-height: 231px;
         width: 100%;
-        transform: translateX(30px);
+        // transform: translateX(30px);
       }
 
       @media @bw768 {

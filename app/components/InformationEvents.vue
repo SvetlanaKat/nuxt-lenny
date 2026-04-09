@@ -58,6 +58,7 @@
   flex-direction: column;
   justify-content: center;
   margin-bottom: 150px;
+  margin-top: 100px;
 
   &__container {
     .container();
