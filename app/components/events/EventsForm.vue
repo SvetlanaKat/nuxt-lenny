@@ -115,6 +115,15 @@
         </div>
       </div>
 
+      <FieldText
+      name="text"
+            label="Есть пожелания? Напишите нам:"
+            type="text"
+            :rules="{ required: true }"
+            :submitCount="submitCount"
+            class="form__field "
+      />
+
     </div>
 
 
