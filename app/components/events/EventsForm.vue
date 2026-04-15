@@ -30,7 +30,41 @@
           class="form__field"
         />
       </div>
+
+<div class="form__group form__group--w50">
+        <FieldSelect
+          name="amount"
+          :options="[
+            {
+              label: 'до 20 человек',
+              value: '20',
+            },
+            {
+              label: 'от 20 до 100 человек',
+              value: '100',
+            },
+            {
+              label: 'от 100 до 500 человек',
+              value: '500',
+            },
+            {
+              label: 'более 500 человек',
+              value: '1000',
+            },
+          ]"
+          :initialValue="'20'"
+          :rules="{ required: true }"
+          :submitCount="submitCount"
+          label="Планируемое количество посетителей:"
+          placeholder="Выберите количество"
+          class="form__field"
+        />
+      </div>
+
     </div>
+
+
+
 
     <div class="form__btns">
       <button type="submit" class="btn form__submit form__submit--w50">
