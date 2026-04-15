@@ -126,7 +126,14 @@
 
     </div>
 
-
+ <FieldCheck
+      name="agreement"
+      :rules="{ required: true }"
+      :submitCount="submitCount"
+      :label="`Я соглашаюсь с <a href='#' target='_blank'>пользовательским соглашением</a> и с <a href='#' target='_blank'>политикой</a> использования персональных данных`"
+      smallLabel
+      class="form__field"
+    />
 
 
     <div class="form__btns">
