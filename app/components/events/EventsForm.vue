@@ -59,7 +59,7 @@
           placeholder="Выберите количество"
           class="form__field"
         />
-        
+
        <FieldDate
           name="date"
           label="Дата проведения:"
@@ -67,6 +67,52 @@
           :submitCount="submitCount"
         />
       
+      </div>
+
+      <div class="form__section">
+        <h3 class="form__section-title field-title">
+          Контакные данные:
+        </h3>
+
+        <div class="form__list">
+          <FieldInput
+            name="first_name"
+            label="Имя"
+            placeholder="Имя"
+            :rules="{ required: true }"
+            :submitCount="submitCount"
+            class="form__field form__field--w50"
+          />
+
+          <FieldInput
+            name="last_name"
+            label="Фамилия"
+            placeholder="Фамилия"
+            :rules="{ required: true }"
+            :submitCount="submitCount"
+            class="form__field form__field--w50"
+          />
+
+          <FieldInput
+            name="phone"
+            label="Телефон"
+            placeholder="+7 (###) ###-##-##"
+            :rules="{ required: true, phone: true }"
+            mask="+7 (###) ###-##-##"
+            :submitCount="submitCount"
+            class="form__field form__field--w50"
+          />
+
+          <FieldInput
+            name="email"
+            label="Email"
+            type="email"
+            placeholder="Email"
+            :rules="{ required: true, email: true }"
+            :submitCount="submitCount"
+            class="form__field form__field--w50"
+          />
+        </div>
       </div>
 
     </div>

@@ -4,9 +4,16 @@ import ru from "@/json/vee-validate/ru.json";
 import { defineRule, configure } from "vee-validate";
 import { email, required } from "@vee-validate/rules";
 
+const phoneValidator = (value) => {
+  if (value === null || value === undefined || value === "") return true;
+
+  return /^((\+7|8)\s?(\(\d{3}\)|\d{3})\s?\d{3}-?\d{2}-?\d{2})$/.test(value);
+};
+
 const rules = {
   email,
   required,
+  phone: phoneValidator,
 };
 
 export default defineNuxtPlugin(() => {
