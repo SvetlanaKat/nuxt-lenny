@@ -59,6 +59,14 @@
           placeholder="Выберите количество"
           class="form__field"
         />
+        
+       <FieldDate
+          name="date"
+          label="Дата проведения:"
+          :rules="{ required: true }"
+          :submitCount="submitCount"
+        />
+      
       </div>
 
     </div>
