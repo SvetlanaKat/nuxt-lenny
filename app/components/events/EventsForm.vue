@@ -176,7 +176,11 @@
     gap: 0px 60px;
     // justify-content: space-between;
 
-     @media @bw370 {
+    @media @bw1020 {
+gap: 0px 30px;
+    }
+
+     @media @bw650 {
       display: flex;
       flex-direction: column;
     
@@ -189,7 +193,7 @@
     width: 100%;
     &--w50 {
       width: calc(50% - 30px);
-       @media @bw370 {
+       @media @bw650 {
       display: flex;
       flex-direction: column;
       width: 100%;

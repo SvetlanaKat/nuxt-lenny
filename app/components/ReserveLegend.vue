@@ -1,9 +1,15 @@
 <template>
   <div class="reserve__legend">
+    <div class="reserve__prise">
+<h4 class="reserve__section-title-right">Стоимость пригласительного билета</h4>
 
-  <h4 class="reserve__section-title-right">Стоимость пригласительного билета</h4>
-
-  <div class="reserve__cost-list">
+<div
+class="reserve__prise-list"
+id="js-reservePriceList"
+data-caption="₽ | 1 персона"
+></div>
+  
+<div class="reserve__cost-list">
     <div class="reserve__cost">
       <SvgIcon
         class="reserve__icon"
@@ -11,18 +17,19 @@
         width="24"
         height="24"
       />
-      <div class="reserve__qty-right" data-caption="персона" data-price="1400 ₽">1</div>
+      <div class="reserve__qty-right" data-caption="₽ | 1 персона">{{ price.red }}</div>
        <SvgIcon
         class="reserve__icon"
         name="rectangle_black"
         width="24"
         height="24"
       />
-      <div class="reserve__qty-right" data-caption="персона" data-price="1250 ₽">1</div>
+      <div class="reserve__qty-right" data-caption="₽ | 1 персона"> {{ price.black }} </div>
     </div>
   </div>
 
-  <h4 class="reserve__section-title-ps">Примечание</h4>
+  <div class="event__notation">
+     <h4 class="reserve__section-title-ps">Примечание</h4>
   <div class="reserve__tickets-list">
     <div class="reserve__tickets-right">
       <SvgIcon
@@ -50,10 +57,18 @@
     </div>
 
 </div>
+
+    </div>
+  </div>
 </div>
+
+
+  
 </template>
 
-<script setup></script>
+<script setup>
+
+</script>
 
 <style lang="less">
 .reserve {
@@ -225,7 +240,7 @@ display: flex;
     line-height: 19px;
 
     &::after {
-      content: " " attr(data-caption) " | " attr(data-price);
+      content: " " attr(data-caption) "  " attr(data-price);
     }
   }
 

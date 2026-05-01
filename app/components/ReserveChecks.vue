@@ -1,12 +1,24 @@
 <template>
 
-<div class="reserve__checks">
+<div class="reserve__checks"  >
     <h4 class="reserve__section-title">
       Забронировать столик
     </h4>
 
     <div class="reserve__book">
-    <FieldCheck
+
+<FieldCheck 
+v-for="(val, key) in checks" 
+:key="key" 
+:checkedValue="+key" 
+name="table"
+:label="`${key} стол`"
+class="reserve__check"
+:red="val.red || false"
+:disabled="val.disabled || false"
+/>
+
+    <!-- <FieldCheck
       name="agreement"
       :rules="{ required: true }"
       :submitCount="submitCount"
@@ -93,11 +105,9 @@
       :label="'11 стол'"
       smallLabel
       class="reserve__check check"
-    />
+    /> -->
     </div>
   </div>
-
-  
 
  <!-- <div class="reserve__checks">
     <h4 class="reserve__section-title">
@@ -222,6 +232,51 @@
 </template>
 
 <script setup>
+import { useForm } from 'vee-validate';
+
+const checks = ref({
+  1: { red: true },
+  2: {},
+  3: {},
+  4: { red: true },
+  5: { disabled: true },
+  6: {},
+  7: { red: true },
+  8: { red: true },
+  9: { red: true },
+  10: {},
+  11: {}
+});
+
+const price = ref({red: 1400, black: 1250});
+
+const { submitCount, handleSubmit, values} = useForm({
+  initialValues: {
+    tables: []
+  }
+})
+
+const onSubmit = handleSubmit((submitValues)=> {
+  console.log(submitValues)
+})
+
+// import { useForm } from "vee-validate";
+// const emits = defineEmits(["close"]);
+
+//   const { submitCount, handleSubmit } = useForm();
+
+//   const close = () => {
+//     emits("close");
+//   };
+
+//   const onSubmit = handleSubmit((submitValues) => {
+//     console.log(submitValues);
+//     alert("Отправлено");
+
+//     close();
+//   });
+
+
 // const reserve = $("#js-reserve");
 // if (reserve.length) {
 //   const reservePrice = JSON.parse(reserve.attr("data-price"));

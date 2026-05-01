@@ -59,7 +59,7 @@
   padding: 0 90px 50px;
   backdrop-filter: blur(50px);
   background: rgba(28, 27, 27, 0.4);
-  // overflow: auto;
+  overflow: auto;
   z-index: 110;
   // display: none;
 
@@ -84,6 +84,7 @@
     background-position: 0 0, 0 0;
     background-size: auto 100% auto;
     background-repeat: repeat, repeat-y;
+    
 
     @media @bw1340 {
       max-width: 1144px;
@@ -164,7 +165,7 @@
       min-height: 80px;
     }
 
-    @media @bw370 {
+    @media @bw500 {
        margin: -40px 0 40px -13px;
       padding: 10px 22px 20px;
       max-width: 225px;

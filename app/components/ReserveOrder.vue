@@ -2,27 +2,67 @@
   <div class="reserve__order">
   <h4 class="reserve__section-title">Ваши пригласительные билеты</h4>
 
-  <div class="reserve__tickets-list">
+  <div 
+  class="reserve__tickets-list"
+  id="js-reserveTicketsList"
+  data-caption="шт." 
+  data-currency="₽" 
+  >
     <div class="reserve__tickets">
-      
-      <div class="reserve__qty" data-caption="шт." data-currency="₽" data-price="1400 ₽">9</div>
-      <div class="reserve__sum" data-currency="₽">12600</div>
+      <div 
+      class="reserve__qty" 
+      data-caption="шт." 
+      data-currency="₽" 
+      :data-price="price.red">
+      0
+    </div>
+      <div class="reserve__sum" data-currency="₽">0</div>
     </div>
 
     <div class="reserve__tickets">
-      <div class="reserve__qty" data-caption="шт." data-currency="₽" data-price="1250 ₽">4</div>
-      <div class="reserve__sum" data-currency="₽">5000</div>
+      <div 
+      class="reserve__qty" 
+      data-caption="шт." 
+      data-currency="₽" 
+      :data-price="price.black">
+      0
     </div>
-  </div>
+      <div class="reserve__sum" data-currency="₽">0</div>
+      </div>
+    </div>
 
-  <div class="reserve__total" data-caption="Сумма" data-currency="₽">17600</div>
-  <button type="submit" class="btn btn--red reserve__submit">
+  <div 
+  class="reserve__total" 
+  data-caption="Сумма" 
+  data-currency="₽"
+  ></div>
+
+  <button 
+  type="submit" 
+  class="more-btn more-btn--red reserve__submit"
+  >
     Купить билеты
   </button>
 </div>
+
 </template>
 
-<script setup></script>
+<script setup>
+import { ref, computed } from 'vue';
+
+
+
+// // Данные
+// const pricePerTicket = ref(1400); // Цена одного билета
+// const ticketCount = ref(9);      // Количество билетов
+
+// // Вычисляемое свойство для подсчета итоговой стоимости
+// const totalPrice = computed(() => {
+//   return pricePerTicket.value * ticketCount.value;
+// });
+
+
+</script>
 
 <style lang="less">
 .reserve {
@@ -168,16 +208,16 @@ display: flex;
   &__qty {
     display: block;
     margin-bottom: 16px;
-    width: 108px;
+    min-width:  108px;
     color: @black;
     font-family: @font1;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
 
-    &::after {
-      content: " " attr(data-caption) " | " attr(data-price);
-    }
+    // &::after {
+    //   content: " " attr(data-caption) " | " attr(data-price);
+    // }
   }
 
   &__qty-right {
@@ -193,9 +233,9 @@ display: flex;
     font-size: 14px;
     line-height: 19px;
 
-    &::after {
-      content: " " attr(data-caption) " | " attr(data-price);
-    }
+    // &::after {
+    //   content: " " attr(data-caption) " | " attr(data-price);
+    // }
   }
 
 &__available {
