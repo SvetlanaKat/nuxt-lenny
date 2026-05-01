@@ -489,12 +489,12 @@ const onClick = (check) => {
     position: relative;
     width: 100%;
 
-    &::after {
-      content: "";
-      display: block;
-      width: 100%;
-      // padding-top: 51.15384%;
-    }
+    // &::after {
+    //   content: "";
+    //   display: block;
+    //   width: 100%;
+    //   // padding-top: 51.15384%;
+    // }
   }
 
   &__scene {
