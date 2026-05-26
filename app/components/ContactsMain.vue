@@ -25,7 +25,7 @@
         />
         <div class="contacts__blok">
           <h3 class="contacts__title">Отдел аренды </h3>
-          <a class="contacts__content" href="tel:8 (3822) 90-72-56">8 (3822) 90-72-56</a>
+          <a class="contacts__content" href="tel:83822907256">8 (3822) 90-72-56</a>
           <a class="contacts__content" href="mailto:idat@tusur.ru">idat@tusur.ru</a>
         </div>
       </div>
@@ -39,13 +39,13 @@
         />
         <div class="contacts__blok">
           <h3 class="contacts__title">Отдел мероприятий </h3>
-          <a class="contacts__content" href="tel:8 (3822) 90-72-56">8 (3822) 90-72-56</a>
+          <a class="contacts__content" href="tel:83822907256">8 (3822) 90-72-56</a>
           <a class="contacts__content" href="mailto:idat@tusur.ru">idat@tusur.ru</a>
         </div>
       </div>
 
     </div>
-    <div class="contacts__square-map"  width="750" height="491">
+    <div class="contacts__square-map">
 <TheMap/>
     </div>
   </div>

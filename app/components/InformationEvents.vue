@@ -27,7 +27,7 @@
       
       <h3 class="information__title">Контакты</h3>
       <p class="information__content">Отдел организации мероприятий </p>
-      <a class="information__content" href="tel:8 (3822) 90-72-56">8 (3822) 90-72-56</a>
+      <a class="information__content" href="tel:83822907256">8 (3822) 90-72-56</a>
       <a class="information__content" href="mailto:idat@tusur.ru">idat@tusur.ru</a>
     </div>
 

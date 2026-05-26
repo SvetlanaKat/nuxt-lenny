@@ -44,10 +44,10 @@
         height="1"
       />
         </div>
-          <span v-if="datetime" class="event__time event__time--right" data-caption="начало">
+          <div v-if="datetime" class="event__time event__time--right" data-caption="начало">
             {{ datetime.time }} 
             <div class="event__info-text event__info-text--700">начало</div>
-          </span>
+          </div>
           <div class="event__info-text">{{ data.address }}</div>
 
           <div class="event__feature">
@@ -389,6 +389,12 @@ const { data } = await useFetch(URL);
   &__feature {
     margin-bottom: 0px;
     margin-top: 0px;
+    background: linear-gradient(
+          90deg,
+          #1c1b1b 0%,
+          rgba(255, 255, 255, 0) 70.86%
+        );
+        height: 1px;
 
     &--180g {
       transform: rotate(180deg);
